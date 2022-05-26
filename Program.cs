@@ -7,12 +7,13 @@ namespace  abstraindo_um_jogo_rpg
     {
         static void Main(string[] args)
         {
-            Arus hero = new Arus("Arus", 22, "Knight");
-            Arus oponent = new Arus("Jennica", 23, "White Wizard");
+            Knight arus = new Knight("Arus", 22, "Knight");
+            Wizard jennica = new Wizard("Jennica", 23, "White Wizard");
             
            
-            Console.WriteLine(hero.Attack());
-            Console.WriteLine(oponent.Attack());
+            Console.WriteLine(arus.Attack());
+            Console.WriteLine(jennica.Attack(1));
         }
     }
+    
 }

@@ -1,12 +1,15 @@
 namespace abstraindo_um_jogo_rpg.src.entities
 {
-    public class Arus
+    public class Hero
     {
-        public Arus(string Name, int Level, string HeroType){
+        public Hero(string Name, int Level, string HeroType){
             this.Name = Name;
             this.Level = Level;
             this.HeroType = HeroType;
+        }
 
+        public Hero(){
+            
         }
 
         public string Name;
@@ -18,7 +21,7 @@ namespace abstraindo_um_jogo_rpg.src.entities
 
         }
 
-        public string Attack(){
+        public virtual string Attack(){
             return this.Name + " Atacou com sua espada";
         }
 
